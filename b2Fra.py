@@ -32,12 +32,17 @@ __proxies__, __client__, __config__, __threads__= cycle(open("proxies.txt", "r")
 token = __config__["token"]
 os.system("cls") if os.name == "nt" else os.system("clear")
 
-x444_art = """
-                                          {}__ __  __ __  __ __
-                                    {}_  __/ // / / // / / // /
-                                   {}| |/_/ // /_/ // /_/ // /_
-                                  {}_>  </__  __/__  __/__  __/
-                                  {}/_/|_|  /_/    /_/    /_/{}
+b2Fra_art = """
+▀█████████▄     ▄████████    ▄████████    ▄████████    ▄████████ 
+  ███    ███   ███    ███   ███    ███   ███    ███   ███    ███ 
+  ███    ███   ███    ███   ███    █▀    ███    ███   ███    ███ 
+ ▄███▄▄▄██▀    ███    ███  ▄███▄▄▄      ▄███▄▄▄▄██▀   ███    ███ 
+▀▀███▀▀▀██▄  ▀███████████ ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   ▀███████████ 
+  ███    ██▄   ███    ███   ███        ▀███████████   ███    ███ 
+  ███    ███   ███    ███   ███          ███    ███   ███    ███ 
+▄█████████▀    ███    █▀    ███          ███    ███   ███    █▀  
+                                         ███    ███              
+
                                *annihilating faggs is our weapon*
                               ═══════════════════════════════════         
                          ═════════════════════════════════════════════
@@ -57,7 +62,7 @@ options = """
            "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")
 
 
-class x444:
+class b2Fra:
     def __init__(self):
         self.proxy = "http://" + next(__proxies__) if __config__["proxy"] == True else None
         self.session = httpx.Client(proxies=self.proxy)
@@ -269,7 +274,7 @@ class x444:
 
     
     def menu(self):
-        os.system(f"cls & title x444 Nuker ^| Authenticated as: {__client__.user.name}#{__client__.user.discriminator}")
+        os.system(f"cls & title b2Fra Nuker ^| Authenticated as: {__client__.user.name}#{__client__.user.discriminator}")
         print(x444_art + options + "\n")
         ans = input("{}({}x444{}) Option{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")) 
         
